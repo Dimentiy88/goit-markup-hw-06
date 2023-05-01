@@ -725,6 +725,7 @@ background: #FFFFFF;
     font-size: 12px;
     margin-bottom: 4px;
     color: #8E8F99;
+    line-height: 14px;
 }
 .modal-form-field {
     position: relative;
@@ -738,7 +739,7 @@ background: #FFFFFF;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
 
-    outline: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: -2px;
 
     transition-duration: 250ms;
@@ -746,7 +747,8 @@ background: #FFFFFF;
 }
 .modal-form-massage:focus,
 .modal-form-input:focus  {
-    outline-color: var(--color-iris) ;
+    outline-color: var(--color-iris);
+    border: transparent;
 }
 .modal-form-icon {
     position: absolute;
@@ -774,7 +776,7 @@ background: #FFFFFF;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
 
-    outline: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: -2px;
 
     transition-duration: 250ms;
@@ -844,13 +846,14 @@ color: #4D5AE5;
     color: #FFFFFF;
     line-height: 24px;
     font-weight: 500;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
 }
 .subscribe-form {
+    display: flex;
 }
 .field-name {
-    display: flex;
+    
 }
 .field-form-input {
     box-sizing: border-box;
